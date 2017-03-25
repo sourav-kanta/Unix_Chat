@@ -13,3 +13,9 @@ Steps to build the app :
       **gcc server.c -o server -lpthread -lsqlite3**
   6. Once the executables are created you can run them with
       **./server PORT_NO or ./client PORT_NO**
+      
+  Suppose there are two online users **SKANTA** and **UDAYAN** then messages should be of the format :
+  1. For client SKANTA : **UDAYAN@hello**
+  2. For client UDAYAN : **SKANTA@hi**
+  
+  That is the format is ***Username@Message***
